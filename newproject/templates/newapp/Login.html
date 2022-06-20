@@ -1,0 +1,32 @@
+{% extends 'newapp/base.html' %}
+
+{% block title %}
+    <title> Login </title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+         <div class="Jumbotron" style="width: 45%">
+              <h1 style="text-align: center;"> Login </h1>
+              <br><br>
+              <form method="post">
+                  {% csrf_token %}
+                  <label for="uname"> Enter Username:</label>
+                  <input type="text" name="uname"><br><br>
+                  <label for="pw">Enter Password:</label>
+                  <input type="password" name="pw"><br><br>
+                  <input type="submit" value="Login" class="btn btn-success">
+              </form>
+              <br>
+
+              {% for msg in messages %}
+              <p style="color:red">{{done}}</p>
+              {% endfor %}
+
+         </div>
+    </div>
+{% endblock %}
+
+{% block content1 %}
+
+{% endblock %}

@@ -1,0 +1,120 @@
+.my_navbar
+{
+ font-size:15px;
+ background-color:ivory;
+ list-style-type: none;
+ overflow: hidden;
+ margin:0px;
+ padding:0px;
+ border:0.5px solid black;
+}
+
+.alignleft {
+	float: left;
+	margin:0px;
+}
+.alignright {
+	float: right;
+}
+
+h1
+{background-color:GhostWhite;}
+
+li
+{
+float:left;
+}
+
+li a
+{
+float:left;
+text-decoration: none;
+color: black;
+padding:10px 10px 10px;
+}
+li a:hover
+{
+background-color:darkgray;
+}
+
+footer{
+background-color:gainsboro;
+padding:10px}
+
+img {
+  max-width:100%;
+  height: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+img
+  width: 100%;
+  height: auto;
+  opacity:1.0;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
