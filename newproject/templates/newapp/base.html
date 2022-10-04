@@ -16,7 +16,7 @@
             <p class="alignleft"><b>Welcome!</b></p>
             <p class="alignright"><br>Call us-+91987654321 <br>&emsp; &emsp; &ensp; +91912345678
             <br>
-            <br>Email us: healthifyhosp@gmail.com</p>
+            <br>Email us: heify@gmail.com</p>
         </div>
 
         <h1 style='text-align:center;'>
@@ -24,19 +24,19 @@
         </h1>
     </header>
     <ul class="my_navbar">
-            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}">Home<br> <br></a></li>
             <li><a href="{% url 'appointment' %}">Request An<br>Appointment</a></li>
             <li><a href="{% url 'ambulance' %}">Ambulance<br>Services</a></li>
             <li><a href="{% url 'ecom' %}">Buy Medicine<br>Online</a></li>
-            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'about' %}">About Us<br> <br></a></li>
 
        <span style="float: right">
            {% if user.is_authenticated %}
                 <li><a>Hello, {{user.username}}</a></li>
                 <li><a href="{% url 'logout' %}">Logout</a></li>
            {% else %}
-                <li><a href="{% url 'login' %}">Login</a></li>
-                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login<br> <br></a></li>
+                <li><a href="{% url 'register' %}">Register<br> <br></a></li>
            {% endif %}
        </span>
     </ul>
@@ -44,12 +44,12 @@
     {% block content %}
            <img src="{% static 'newapp/images/hosp3.jpg'%}">
            <u><h3>Overview</h3></u>
-           <h3><p>
+           <h4><p>
            Welcome to Healthify in New Jersey,USA.
 <br>The original and largest Cure and Care Campus Located in the heart of New Jersey,USA.
 <br>a dynamic city just 90 minutes south of the Twin Cities of Minneapolis and St. Paul
 <br>Healthify has been safely caring for patients from around the world for more than 100 years.
-<br>Healthify will always be your safe care destination.</p></h3>
+<br>Healthify will always be your safe care destination.</p></h4>
 
 
     {% endblock %}
